@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Abdullah Salim Turja</title>
+  <meta name="description" content="Personal portfolio of Abdullah Salim Turja: projects, skills, resume, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #121829;
+      --muted: #9aa4b2;
+      --text: #e6e9ef;
+      --accent: #5b9cff;
+      --ring: rgba(91,156,255,0.35);
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(11,15,25,0.6); border-bottom: 1px solid rgba(255,255,255,0.06); z-index: 10; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { font-weight: 800; letter-spacing: 0.3px; }
+    .navlinks a { margin-left: 16px; color: var(--muted); }
+    .navlinks a:hover { color: var(--text); }
+
+    .hero { display:grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items:center; padding-top: 28px; }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.1; margin: 0 0 12px; }
+    .hero p { color: var(--muted); margin: 0 0 18px; }
+    .tags { display:flex; flex-wrap: wrap; gap:8px; }
+    .tag { padding:6px 10px; border-radius:999px; background: rgba(255,255,255,0.06); color: var(--text); font-size: 13px; border: 1px solid rgba(255,255,255,0.07); }
+    .cta { display:flex; gap: 12px; margin-top: 16px; }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: var(--card); color: var(--text); box-shadow: 0 0 0 0 var(--ring); transition: box-shadow .2s ease, transform .05s ease; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 0 0 6px var(--ring); text-decoration: none; }
+    .btn.primary { background: linear-gradient(180deg, #3e7dfc, #205bff); border-color: rgba(0,0,0,0.2); }
+
+    section { margin-top: 40px; }
+    .section-title { font-size: 22px; margin: 0 0 14px; }
+
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: var(--card); border:1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow:hidden; display:flex; flex-direction:column; }
+    .thumb { aspect-ratio: 16/9; background: linear-gradient(135deg, rgba(91,156,255,0.25), rgba(255,255,255,0.03)); display:flex; align-items:center; justify-content:center; font-weight:600; color:#c7d2fe; }
+    .card-body { padding: 14px; display:flex; flex-direction:column; gap: 10px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .actions { display:flex; gap:8px; }
+
+    .about { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .about .panel { background: var(--card); border:1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 16px; }
+
+    footer { margin: 48px 0 24px; color: var(--muted); text-align:center; font-size: 14px; }
+
+    .social { display:flex; gap:10px; }
+    .social a { display:inline-flex; padding:10px; border-radius: 12px; background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); }
+
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } .about { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Abdullah Salim Turja</div>
+        <div class="navlinks">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class= "btn" href="https://drive.google.com/file/d/1A9jhktpQBVoSdX07JcbSUQYSHFIgUbky/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Electrical Engineer, Project Coordination & Data/BI Enthusiast</h1>
+        <p> Project Management Personnel with an intensively working experience in the country’s flagship multibillion dollar Rooppur Nuclear Power Plant Project. Comprehensive learning experience in international standards and procedures (e.g., nuclear construction, ISO/GOST compliance, documentation, coordination)</p>
+        <div class="tags">
+          <span class="tag">Excel / Power Query</span>
+          <span class= "tag">Microsoft Project</span>
+          <span class= "tag">Microsoft Access Database</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">AutoCAD & Revit MEP</span>
+          <span class="tag">ISO & GOST</span>
+          <span class="tag">Documentation</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://github.com/abdullahsalimturja.github.io" target="_blank" rel="noopener">GitHub Profile</a>
+        </div>
+      </div>
+      <div class="panel" style="background: var(--card); border:1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 16px;">
+        <h3 style="margin-top:0">Quick Facts</h3>
+        <ul style="margin:0; padding-left:18px; line-height:1.6">
+          <li>4+ years as Engineer (Electrical)</li>
+          <li>Weekend MBA @ IBA-JU</li>
+          <li>Focus: schedule/cost/execution/quality/supply chain management</li>
+        </ul>
+        <div class="social" style="margin-top:12px">
+          <a href="mailto:your.email@example.com" title="Email" aria-label="Email">✉️</a>
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">{ }</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid">
+        <!-- PROJECT 1 -->
+        <article class="card">
+          <div class="thumb">Concrete Production Analytics (2018–2025)</div>
+          <div class="card-body">
+            <strong>Power BI Dashboard</strong>
+            <p class="meta">Structured lab data, trend analysis, and KPIs for TCEL – Rooppur NPP</p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/YOUR-USERNAME/concrete-analytics" target="_blank" rel="noopener">Source</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+        <!-- PROJECT 2 -->
+        <article class="card">
+          <div class="thumb">Email Insights (2019–Today)</div>
+          <div class="card-body">
+            <strong>Power Query + Excel</strong>
+            <p class="meta">14k+ emails cleaned & categorized; team coordination metrics</p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/YOUR-USERNAME/email-insights" target="_blank" rel="noopener">Source</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Case Study</a>
+            </div>
+          </div>
+        </article>
+        <!-- PROJECT 3 -->
+        <article class="card">
+          <div class="thumb">BIM Coordination</div>
+          <div class="card-body">
+            <strong>Revit MEP + Navisworks</strong>
+            <p class="meta">Clash detection workflow & electrical routing improvements</p>
+            <div class="actions">
+              <a class="btn" href="https://www.tcel.com.bd" target="_blank" rel="noopener">Source</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Report</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about">
+        <div class="panel">
+          <p>Experienced Production and Project Coordination Professional with over 4 years of hands-on experience in production planning, execution, and project implementation. Proven expertise in optimizing manufacturing processes, calculating production targets, and ensuring seamless coordination across departments. Strong analytical and organizational skills with a focus on improving efficiency, reducing waste, and supporting continuous development in dynamic production environments. (4–6 lines). Explain your strengths: electrical implementation, standards compliance (ISO/GOST), procurement & documentation, and your transition into data analysis (Power BI/Tableau). Mention what roles you’re seeking.</p>
+        </div>
+        <div class="panel">
+          <h3 style="margin-top:0">Skills</h3>
+          <ul style="margin:0; padding-left:18px; columns: 2; gap: 24px;">
+            <li>Power BI / DAX</li>
+            <li>Tableau</li>
+            <li>Excel / Power Query</li>
+            <li>SQL (basics)</li>
+            <li>Revit MEP / Navisworks</li>
+            <li>Project coordination</li>
+            <li>ISO & GOST docs</li>
+            <li>QA/QC workflows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="Experiences">
+      <h2 class="section-title">Experience:</h2>
+      <div class="Experiences">
+        <div class="panel">
+          <p>
+•	Reviewed over 250+ material technical datasheets for ISO compliance and ensured adherence to GOST standards for nuclear project materials.
+•	Conducted detailed comparisons between design specifications and proposed materials using comprehensive property tables.
+•	Prepared and submitted 800+ material approval requests letters to ASE JSC, including complete supporting documentation.
+•	Evaluated cost and durability factors to support procurement decisions and optimize material selection.
+•	Managed the internal distribution of key client communications, such as official letters and documents.
+•	Maintained a structured archive of 10,000+ communications technical documents for traceability.
+•	Coordinated with supply chain & execution to facilitate the timely movement of materials post-approval.
+•	Regularly updated tracking databases (Google Sheets, MS Outlook) for material requirements, approvals, and technical documentation.
+•	Supported the preparation of as-built documentation by providing material records and approvals. 
+</p>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Best way to reach me: <a href="mailto:abdullahsalim.ibaju@gmail.com">abdullahsalim.ibaju@gmail.com</a>. You can also DM me on <a href="https://www.linkedin.com/in/abdullah-salim-turjo" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> YOUR NAME. Built with ♥️ and GitHub Pages.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
